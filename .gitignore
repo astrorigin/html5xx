@@ -1,0 +1,14 @@
+# html5xx .gitignore
+
+build*
+tmp*
+
+*~
+*.bak
+*.orig
+*.swp
+
+*.pui
+*.prj
+
+#end.
