@@ -18,12 +18,13 @@ string ScriptElement::toString() const
   }
 
   size_t found, pos = 0;
-  string s = indent() + m_text;
-  const string ind = string("\n") + indent();
+  const string ind = indent();
+  string s = ind + m_text;
+  const string nl = "\n" + ind;
 
   while ((found = s.find('\n', pos)) != string::npos) {
-    s.replace(found, 1, ind);
-    pos = found + ind.length();
+    s.replace(found, 1, nl);
+    pos = found + nl.length();
   }
 
   return s.back() != '\n' ? s + '\n' : s;

@@ -14,10 +14,11 @@ string Comment::toString() const
   string s = m_text;
   size_t found, pos = 0;
   const string ind = indent();
+  const string nl = "\n" + ind + ' ';
 
   while ((found = s.find('\n', pos)) != string::npos) {
-    s.replace(found, 1, '\n' + ind + ' ');
-    pos = found + ind.length() + 2;
+    s.replace(found, 1, nl);
+    pos = found + nl.length();
   }
 
   return ind + "<!-- " + s + " -->\n";

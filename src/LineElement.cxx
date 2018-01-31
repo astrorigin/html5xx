@@ -15,12 +15,6 @@ string LineElement::toString() const
   string s = m_text;
 
   pos = 0;
-  while ((found = s.find('&', pos)) != string::npos) {
-    s.replace(found, 1, "&amp;");
-    pos = found + 5;
-  }
-
-  pos = 0;
   while ((found = s.find('<', pos)) != string::npos) {
     s.replace(found, 1, "&lt;");
     pos = found + 4;

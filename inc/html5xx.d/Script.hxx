@@ -14,10 +14,12 @@ class Script: public Element
 {
 public:
 
-  Script( const string& type="text/javascript"):
+  Script( const string& type="text/javascript" ):
     Element(Block, "script")
   {
-    attr("type", type);
+    if (!type.empty()) {
+      attr("type", type);
+    }
   }
 
 };

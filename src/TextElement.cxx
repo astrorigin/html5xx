@@ -14,15 +14,10 @@ namespace html
 string TextElement::toString() const
 {
   size_t found, pos;
-  string s = indent() + m_text;
+  const string ind = indent();
+  string s = ind + m_text;
 
-  const string nl = "<br/>\n" + indent();
-
-  pos = 0;
-  while ((found = s.find('&', pos)) != string::npos) {
-    s.replace(found, 1, "&amp;");
-    pos = found + 5;
-  }
+  const string nl = "<br/>\n" + ind;
 
   pos = 0;
   while ((found = s.find('<', pos)) != string::npos) {

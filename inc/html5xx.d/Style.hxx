@@ -16,10 +16,12 @@ class Style: public Element
 {
 public:
 
-  Style( const string& type="text/css"):
+  Style( const string& type="text/css" ):
     Element(Block, "style")
   {
-    attr("type", type);
+    if (!type.empty()) {
+      attr("type", type);
+    }
   }
 
 };

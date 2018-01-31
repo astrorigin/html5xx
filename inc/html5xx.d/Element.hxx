@@ -53,6 +53,8 @@ public:
 
   void format( Format fmt ) { m_format = fmt; }
 
+  string name() const { return m_name; }
+
   string attr( const string& key ) const;
 
   void attr( const string& key, const string& value );
@@ -60,6 +62,11 @@ public:
   void put( AbsElement* elem );
 
   virtual string toString() const;
+
+  static Element* factory( Format fmt, const string& name )
+  {
+    return new Element(fmt, name);
+  }
 
 };
 
