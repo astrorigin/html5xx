@@ -71,13 +71,76 @@
 #include "html5xx.d/Input.hxx"
 #include "html5xx.d/Ins.hxx"
 
+#include "html5xx.d/Kbd.hxx"
 
+#include "html5xx.d/Label.hxx"
+#include "html5xx.d/Legend.hxx"
+#include "html5xx.d/Li.hxx"
+#include "html5xx.d/Link.hxx"
 
-
+#include "html5xx.d/Main.hxx"
+#include "html5xx.d/Map.hxx"
+#include "html5xx.d/Mark.hxx"
+#include "html5xx.d/Menu.hxx"
+#include "html5xx.d/Menuitem.hxx"
 #include "html5xx.d/Meta.hxx"
+#include "html5xx.d/Meter.hxx"
+
+#include "html5xx.d/Nav.hxx"
+#include "html5xx.d/Noscript.hxx"
+
+#include "html5xx.d/Object.hxx"
+#include "html5xx.d/Ol.hxx"
+#include "html5xx.d/Optgroup.hxx"
+#include "html5xx.d/Option.hxx"
+#include "html5xx.d/Output.hxx"
+
 #include "html5xx.d/P.hxx"
+#include "html5xx.d/Param.hxx"
+#include "html5xx.d/Picture.hxx"
+#include "html5xx.d/Pre.hxx"
+#include "html5xx.d/Progress.hxx"
+
+#include "html5xx.d/Q.hxx"
+
+#include "html5xx.d/Rp.hxx"
+#include "html5xx.d/Rt.hxx"
+#include "html5xx.d/Ruby.hxx"
+
+#include "html5xx.d/S.hxx"
+#include "html5xx.d/Samp.hxx"
 #include "html5xx.d/Script.hxx"
+#include "html5xx.d/Section.hxx"
+#include "html5xx.d/Select.hxx"
+#include "html5xx.d/Small.hxx"
+#include "html5xx.d/Source.hxx"
+#include "html5xx.d/Span.hxx"
+#include "html5xx.d/Strike.hxx"
+#include "html5xx.d/Strong.hxx"
 #include "html5xx.d/Style.hxx"
+#include "html5xx.d/Sub.hxx"
+#include "html5xx.d/Summary.hxx"
+#include "html5xx.d/Sup.hxx"
+
+#include "html5xx.d/Table.hxx"
+#include "html5xx.d/Tbody.hxx"
+#include "html5xx.d/Td.hxx"
+#include "html5xx.d/Template.hxx"
+#include "html5xx.d/Textarea.hxx"
+#include "html5xx.d/Tfoot.hxx"
+#include "html5xx.d/Th.hxx"
+#include "html5xx.d/Thead.hxx"
+#include "html5xx.d/Time.hxx"
 #include "html5xx.d/Title.hxx"
+#include "html5xx.d/Tr.hxx"
+#include "html5xx.d/Track.hxx"
+
+#include "html5xx.d/U.hxx"
+#include "html5xx.d/Ul.hxx"
+
+#include "html5xx.d/Var.hxx"
+#include "html5xx.d/Video.hxx"
+
+#include "html5xx.d/Wbr.hxx"
 
 // vi: set ai et sw=2 sts=2 ts=2 :

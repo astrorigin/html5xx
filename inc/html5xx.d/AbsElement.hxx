@@ -23,7 +23,7 @@ protected:
     m_column(column)
   {}
 
-  string indent() const;
+  string indent() const { return string(m_column, ' '); }
 
 public:
 

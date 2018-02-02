@@ -76,8 +76,8 @@ string Element::toString() const
 
   if (sz = m_attributes.size()) {
     for (size_t i = 0; i < sz; ++i) {
-      pair<string, string> p = m_attributes[i];
-      ss << ' ' << p.first << "=\"" << escapeQuotes(p.second) << '"';
+      const pair<string, string>* p = &m_attributes[i];
+      ss << ' ' << p->first << "=\"" << escapeQuotes(p->second) << '"';
     }
   }
 
@@ -114,6 +114,10 @@ string Element::toString() const
 
 string Element::escapeQuotes( const string& str )
 {
+  if (str.find('"', 0) == string::npos) {
+    return str;
+  }
+
   size_t found, pos = 0;
   string s = str;
 

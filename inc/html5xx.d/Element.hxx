@@ -35,6 +35,12 @@ protected:
   vector< pair<string, string> > m_attributes;
   vector<AbsElement*> m_content;
 
+  Element( Format fmt, const char* name ):
+    AbsElement(0),
+    m_format(fmt),
+    m_name(name)
+  {}
+
   Element( Format fmt, const string& name ):
     AbsElement(0),
     m_format(fmt),

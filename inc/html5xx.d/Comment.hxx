@@ -18,7 +18,11 @@ class Comment: public StringElement
 
 public:
 
-  Comment( const string& str="" ):
+  Comment( const char* str="" ):
+    StringElement(str)
+  {}
+
+  Comment( const string& str ):
     StringElement(str)
   {}
 

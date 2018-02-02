@@ -18,7 +18,11 @@ class LineElement: public StringElement
 
 public:
 
-  LineElement( const string& str="" ):
+  LineElement( const char* str="" ):
+    StringElement(str)
+  {}
+
+  LineElement( const string& str ):
     StringElement(str)
   {}
 

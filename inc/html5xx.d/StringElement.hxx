@@ -20,7 +20,12 @@ protected:
 
   string  m_text;
 
-  StringElement( const string& str="" ):
+  StringElement( const char* str="" ):
+    AbsElement(0),
+    m_text(str)
+  {}
+
+  StringElement( const string& str ):
     AbsElement(0),
     m_text(str)
   {}

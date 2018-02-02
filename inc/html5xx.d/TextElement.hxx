@@ -18,7 +18,11 @@ class TextElement: public StringElement
 
 public:
 
-  TextElement( const string& str="" ):
+  TextElement( const char* str="" ):
+    StringElement(str)
+  {}
+
+  TextElement( const string& str ):
     StringElement(str)
   {}
 

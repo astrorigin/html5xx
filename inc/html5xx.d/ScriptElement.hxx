@@ -18,7 +18,11 @@ class ScriptElement: public StringElement
 
 public:
 
-  ScriptElement( const string& str="" ):
+  ScriptElement( const char* str="" ):
+    StringElement(str)
+  {}
+
+  ScriptElement( const string& str ):
     StringElement(str)
   {}
 

@@ -8,7 +8,6 @@ set( HDR inc/html5xx )
 file( GLOB SUBHDR inc/html5xx.d/*.hxx )
 
 set( SRC
-  src/AbsElement.cxx
   src/Comment.cxx
   src/Document.cxx
   src/Element.cxx
